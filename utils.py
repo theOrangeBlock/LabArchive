@@ -9,7 +9,8 @@ def numberToExcelCol(number):
     26 -> AA
     28 -> AC
     '''
-
+#I dont think this works for numbers larger than 51
     colName = ''
     while number > 25:
-        
+        colName += char((number % 25) + 65)
+
